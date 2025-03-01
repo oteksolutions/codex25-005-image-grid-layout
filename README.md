@@ -1,7 +1,7 @@
 # codex25-005-image-grid-layout
 
 <p><strong>PROJECT OVERVIEW</strong></p>
-This project is an Image Grid Layout built using HTML and CSS only. It focuses on creating a visually appealing and responsive grid system for displaying images in an organized manner. The layout ensures flexibility, adaptability to different screen sizes, and a clean design.
+This project is an Image Grid Layout built using HTML and CSS. It focuses on creating a visually appealing and responsive grid system for displaying images in an organized manner. The layout ensures flexibility, adaptability to different screen sizes, and a clean design.
 <br><br>
 <p><strong>Learning Objective:</strong> The objective of this project is to improve my HTML and CSS skills by practicing grid-based layouts, responsive design, and efficient styling techniques. This helps me enhance my understanding of CSS Grid, Flexbox, and proper image scaling for various devices.</p>
 <br>
