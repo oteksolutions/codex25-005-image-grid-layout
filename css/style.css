@@ -1,57 +1,52 @@
-/* General Styling */
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Use min-height for better content handling */
-  background-color: #f8f9fa;
+/* Basic reset and container styling */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Carousel Styling */
-.carousel {
-  width: 300px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-inner {
-  display: flex;
-  width: 300%;
-  animation: slide 18s infinite ease-in-out;
-}
-
-.testimonial {
-  width: 300px;
-  flex-shrink: 0;
+body {
+  font-family: sans-serif;
   padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-title {
   text-align: center;
-  background-color: #fff; /* Use background-color for consistency */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
 }
 
-.testimonial p {
-  font-size: 16px;
-  font-style: italic;
-  color: #555;
-  margin: 0; /* Reset default margins */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 15px;
 }
 
-.testimonial h3 {
-  margin: 10px 0 0; /* Shorthand for margin */
-  font-size: 14px;
-  color: #333;
+.grid-item {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-/* Carousel Animation */
-@keyframes slide {
-  0%, 16.66% { transform: translateX(0); } /* First slide, pause for 16.66% */
-  33.33%, 50% { transform: translateX(-100%); } /* Second slide, pause for 16.66% */
-  66.66%, 83.33% { transform: translateX(-200%); } /* Third slide, pause for 16.66% */
-  100% { transform: translateX(0); } /* Loop back to first slide */
+.grid-item:hover {
+  transform: scale(1.02);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* Footer */
@@ -68,4 +63,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; /* Add hover effect */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+  }
 }
