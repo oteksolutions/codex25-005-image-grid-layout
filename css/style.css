@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height for better content handling */
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* Carousel Styling */
+.carousel {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%;
+  animation: slide 18s infinite ease-in-out;
+}
+
+.testimonial {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff; /* Use background-color for consistency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+  font-size: 16px;
+  font-style: italic;
+  color: #555;
+  margin: 0; /* Reset default margins */
+}
+
+.testimonial h3 {
+  margin: 10px 0 0; /* Shorthand for margin */
+  font-size: 14px;
+  color: #333;
+}
+
+/* Carousel Animation */
+@keyframes slide {
+  0%, 16.66% { transform: translateX(0); } /* First slide, pause for 16.66% */
+  33.33%, 50% { transform: translateX(-100%); } /* Second slide, pause for 16.66% */
+  66.66%, 83.33% { transform: translateX(-200%); } /* Third slide, pause for 16.66% */
+  100% { transform: translateX(0); } /* Loop back to first slide */
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center; /* Center the footer text */
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add hover effect */
+}
